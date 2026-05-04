@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MassagePro - Jasa Pijat Panggilan Terdekat 24 Jam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .bg-sage { background-color: #71797E; }
+        .text-warm { color: #8B735B; }
+        .btn-luxury { 
+            background: linear-gradient(135deg, #4A5D4E 0%, #2F3E33 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-luxury:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        
+        details summary::-webkit-details-marker { display: none; }
+        
+        .cta-gradient {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .price-card:hover { transform: scale(1.02); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-[#FDFBF7] text-slate-800">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tight text-sage uppercase">MASSAGE<span class="text-warm">PRO</span></div>
+            <div class="hidden md:flex space-x-8 font-medium text-xs uppercase tracking-widest text-stone-500">
+                <a href="#home" class="hover:text-warm transition-colors">Home</a>
+                <a href="#keunggulan" class="hover:text-warm transition-colors">Keunggulan</a>
+                <a href="#layanan" class="hover:text-warm transition-colors">Layanan</a>
+                <a href="#harga" class="hover:text-warm transition-colors">Harga</a>
+                <a href="#faq" class="hover:text-warm transition-colors">FAQ</a>
+            </div>
+            <!-- Tombol WA Navigasi -->
+            <a href="https://wa.me/6289673171589?text=Halo%20MassagePro%2C%20saya%20ingin%20konsultasi%20layanan%20pijat." 
+               target="_blank" 
+               class="bg-sage text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-stone-600 transition-all shadow-lg inline-block">
+               Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-slate-900">
+                    Jasa Pijat Panggilan Terdekat 24 Jam – <span class="text-warm italic">Profesional & Terpercaya</span>
+                </h1>
+                <h2 class="text-xl font-semibold text-stone-600 mb-6">Solusi Pegal, Capek, & Stres Tanpa Perlu Keluar Rumah</h2>
+                <p class="text-lg text-slate-500 mb-8 leading-relaxed">
+                    Nikmati layanan pijat panggilan langsung ke rumah Anda dengan terapis berpengalaman, ramah, dan profesional. Cocok untuk ibu rumah tangga, pekerja kantoran, hingga lansia yang butuh relaksasi maksimal tanpa ribet.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10 text-sm font-bold text-stone-700">
+                    <div class="flex items-center gap-2">✅ Bisa dipanggil ke rumah / hotel</div>
+                    <div class="flex items-center gap-2">✅ Terapis berpengalaman & sopan</div>
+                    <div class="flex items-center gap-2">✅ Layanan 24 jam (siap kapan saja)</div>
+                    <div class="flex items-center gap-2">✅ Harga transparan & terjangkau</div>
+                </div>
+                <!-- Tombol WA Hero -->
+                <a href="https://wa.me/6289673171589?text=Halo%20Admin%20MassagePro%2C%20saya%20ingin%20booking%20layanan%20pijat%20sekarang." 
+                   target="_blank" 
+                   class="btn-luxury text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-xl flex items-center gap-3 w-full sm:w-auto justify-center">
+                    [ PESAN SEKARANG VIA WHATSAPP ]
+                </a>
+            </div>
+            <div class="relative">
+                <div class="rounded-[3rem] overflow-hidden shadow-2xl border-[10px] border-white">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1000" alt="Pijat Panggilan" class="w-full h-[500px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-slate-900">Kenapa Harus Pilih Jasa Pijat Panggilan Kami?</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="flex gap-6">
+                    <div class="text-2xl text-warm font-bold">✔</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Terapis Profesional & Berpengalaman</h3>
+                        <p class="text-stone-500 text-sm">Kami hanya menggunakan terapis yang sudah terlatih dalam berbagai teknik pijat seperti refleksi, relaksasi, hingga terapi pegal-pegal.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-2xl text-warm font-bold">✔</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Praktis – Kami Datang ke Lokasi Anda</h3>
+                        <p class="text-stone-500 text-sm">Tidak perlu keluar rumah, cukup pesan via WhatsApp, terapis langsung datang ke lokasi Anda dengan peralatan lengkap.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-2xl text-warm font-bold">✔</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Aman & Terpercaya</h3>
+                        <p class="text-stone-500 text-sm">Privasi pelanggan adalah prioritas kami. Layanan kami sudah dipercaya oleh banyak pelanggan di area Anda.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="text-2xl text-warm font-bold">✔</div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Harga Terjangkau & Transparan</h3>
+                        <p class="text-stone-500 text-sm">Tidak ada biaya tersembunyi. Anda tahu harga sebelum layanan dimulai.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-24 bg-stone-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-slate-900">Layanan Pijat Panggilan yang Tersedia</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm text-center">
+                    <span class="text-3xl mb-4 block">🔹</span>
+                    <h3 class="font-bold text-lg mb-3">Pijat Relaksasi</h3>
+                    <p class="text-stone-500 text-sm">Membantu mengurangi stres, meningkatkan kualitas tidur, dan membuat tubuh lebih segar.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm text-center">
+                    <span class="text-3xl mb-4 block">🔹</span>
+                    <h3 class="font-bold text-lg mb-3">Pijat Refleksi</h3>
+                    <p class="text-stone-500 text-sm">Menekan titik saraf untuk melancarkan peredaran darah dan meningkatkan kesehatan tubuh.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm text-center">
+                    <span class="text-3xl mb-4 block">🔹</span>
+                    <h3 class="font-bold text-lg mb-3">Pijat Kesehatan</h3>
+                    <p class="text-stone-500 text-sm">Cocok untuk mengatasi pegal, nyeri otot, dan kelelahan akibat aktivitas harian.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm text-center">
+                    <span class="text-3xl mb-4 block">🔹</span>
+                    <h3 class="font-bold text-lg mb-3">Pijat untuk Lansia</h3>
+                    <p class="text-stone-500 text-sm">Perawatan khusus dengan teknik lembut untuk orang tua agar lebih nyaman dan sehat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harga Section -->
+    <section id="harga" class="py-24 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-slate-900">Daftar Harga Jasa Pijat Panggilan</h2>
+            <div class="space-y-4">
+                <div class="flex justify-between items-center p-6 bg-stone-50 rounded-2xl border border-stone-100 price-card">
+                    <span class="font-semibold text-slate-700">Pijat Relaksasi 60 menit</span>
+                    <span class="font-bold text-warm text-xl">Rp100.000</span>
+                </div>
+                <div class="flex justify-between items-center p-6 bg-stone-50 rounded-2xl border border-stone-100 price-card">
+                    <span class="font-semibold text-slate-700">Pijat Relaksasi 90 menit</span>
+                    <span class="font-bold text-warm text-xl">Rp140.000</span>
+                </div>
+                <div class="flex justify-between items-center p-6 bg-stone-50 rounded-2xl border border-stone-100 price-card">
+                    <span class="font-semibold text-slate-700">Pijat Refleksi 60 menit</span>
+                    <span class="font-bold text-warm text-xl">Rp120.000</span>
+                </div>
+                <div class="flex justify-between items-center p-6 bg-stone-50 rounded-2xl border border-stone-100 price-card">
+                    <span class="font-semibold text-slate-700">Pijat Kesehatan 90 menit</span>
+                    <span class="font-bold text-warm text-xl">Rp150.000</span>
+                </div>
+            </div>
+            <p class="mt-8 text-center text-stone-400 italic text-sm">💡 Harga bisa menyesuaikan lokasi & waktu (malam/hari libur)</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-slate-900">FAQ (Pertanyaan yang Sering Ditanyakan)</h2>
+            <div class="space-y-4">
+                <details class="group bg-stone-50 rounded-2xl p-6 border border-stone-200">
+                    <summary class="font-bold list-none flex justify-between items-center cursor-pointer">
+                        Apakah bisa panggilan malam hari?
+                        <span class="text-warm transition-transform group-open:rotate-180">▼</span>
+                    </summary>
+                    <p class="text-stone-500 mt-4 text-sm leading-relaxed">Ya, kami melayani hingga 24 jam tergantung ketersediaan terapis.</p>
+                </details>
+                <details class="group bg-stone-50 rounded-2xl p-6 border border-stone-200">
+                    <summary class="font-bold list-none flex justify-between items-center cursor-pointer">
+                        Apakah terapisnya profesional?
+                        <span class="text-warm transition-transform group-open:rotate-180">▼</span>
+                    </summary>
+                    <p class="text-stone-500 mt-4 text-sm leading-relaxed">Ya, semua terapis sudah berpengalaman dan terlatih dalam bidangnya.</p>
+                </details>
+                <details class="group bg-stone-50 rounded-2xl p-6 border border-stone-200">
+                    <summary class="font-bold list-none flex justify-between items-center cursor-pointer">
+                        Apakah aman?
+                        <span class="text-warm transition-transform group-open:rotate-180">▼</span>
+                    </summary>
+                    <p class="text-stone-500 mt-4 text-sm leading-relaxed">Sangat aman. Kami menjaga privasi dan kenyamanan pelanggan sebagai prioritas utama kami.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final Section -->
+    <section class="relative py-32 px-6 cta-gradient text-center">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.9)]">
+                “Jangan tunda lagi, badan sehat itu investasi!”
+            </h2>
+            <p class="text-xl md:text-2xl mb-12 text-stone-100 font-medium drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]">
+                Rasakan sendiri manfaat pijat berkualitas tanpa harus keluar rumah.
+            </p>
+            <div class="flex flex-col items-center gap-6">
+                <!-- Tombol WA Final -->
+                <a href="https://wa.me/6289673171589?text=Halo%20MassagePro%2C%20saya%20tertarik%20untuk%20booking%20jasa%20pijat%20hari%20ini." 
+                   target="_blank" 
+                   class="bg-white text-slate-900 px-14 py-6 rounded-2xl font-black text-xl shadow-2xl hover:scale-105 transition-all inline-block">
+                    [ PESAN SEKARANG VIA WHATSAPP ]
+                </a>
+                <div class="bg-red-600 text-white px-6 py-3 rounded-xl font-bold animate-pulse shadow-lg">
+                    🔥 Penawaran Spesial: Diskon 10% untuk pemesanan pertama! (Hanya berlaku hari ini)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-stone-200 py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center md:text-left grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="text-xl font-bold text-sage uppercase">MASSAGE<span class="text-warm">PRO</span></p>
+                <p class="text-stone-500 text-sm mt-2">Jasa Pijat Panggilan Terbaik, Murah, dan Profesional.</p>
+            </div>
+            <div class="md:text-right text-stone-500 text-xs">
+                &copy; 2026 MassagePro. Developed by Locastra.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
